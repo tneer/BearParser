@@ -28,4 +28,21 @@ public class Achievement {
 	public List<Requirement> getRequirements() {
 		return requirements;
 	}
+	
+	public int getId() {
+		return id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public String getInstructions() {
+		return instructions;
+	}
+
+	@Override
+	public String toString() {
+		return String.format("\t%1$d. %2$s\n\t\t%3$s", id, title, instructions);
+	}
 }
